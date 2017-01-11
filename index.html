@@ -10,6 +10,9 @@
       	mui.init();
     </script>
    	<style>
+   		/*body{
+   			padding-right: 10px;
+   		}*/
    		.mui-slider-indicator .mui-indicator{
    			width: 34px;
    			height: 3px;
@@ -22,8 +25,8 @@
    			background: blue;
    		}
    		.mui-table-view .mui-media-object{
-   			margin-top: 10px;
    			max-width: 80px;
+   			height: auto;
    		}
    		.mui-bar-tab .mui-tab-item{
    			position: relative;
@@ -32,12 +35,15 @@
    			position: absolute;
    			top: 1px;
    			right: 10px;
+   			transform: scale(.8);
    		}
-   		/*.mui-navigate-right{
+   		.mui-table-view-cell>a:not(.mui-btn){
    			display: flex;
    			display: -webkit-flex;
-   			
-   		}*/
+   			align-items: center;
+   			-webkit-align-items: center;
+   		}
+   		
    	</style>
 </head>
 <body>
@@ -116,7 +122,7 @@
 	                <img class="mui-media-object mui-pull-left" src="img/3.jpg">
 	                <div class="mui-media-body">
 	                    CBD
-	                    <p class="mui-ellipsis-2">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+	                    <p class="mui-ellipsis-2">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
 	                </div>
 	            </a>
 	        </li>
@@ -125,7 +131,7 @@
 	                <img class="mui-media-object mui-pull-left" src="img/4.jpg">
 	                <div class="mui-media-body">
 	                   	 	家人
-	                    <p class="mui-ellipsis-2">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+	                    <p class="mui-ellipsis-2">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
 	                </div>
 	            </a>
 	        </li>
