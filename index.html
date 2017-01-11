@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>首页</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+   	<style>
+   		.mui-slider-indicator .mui-indicator{
+   			width: 34px;
+   			height: 3px;
+   			border-radius: 0;
+   			-webkit-box-shadow: none;
+   			box-shadow: none;
+   			background: #d9dadc;
+   		}
+   		.mui-slider-indicator .mui-indicator.mui-active{
+   			background: blue;
+   		}
+   		.mui-table-view .mui-media-object{
+   			margin-top: 10px;
+   			max-width: 80px;
+   		}
+   		.mui-bar-tab .mui-tab-item{
+   			position: relative;
+   		}
+   		.mui-bar-tab .mui-tab-item .mui-badge{
+   			position: absolute;
+   			top: 1px;
+   			right: 10px;
+   		}
+   		/*.mui-navigate-right{
+   			display: flex;
+   			display: -webkit-flex;
+   			
+   		}*/
+   	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-icon-bars mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">首页</h1>
+	</header>
+	<div class="mui-content">
+	    <div id="slider" class="mui-slider" >
+	      <div class="mui-slider-group mui-slider-loop">
+	        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+	        <div class="mui-slider-item mui-slider-item-duplicate">
+	          <a href="#">
+	            <img src="img/4.jpg">
+	          </a>
+	        </div>
+	        <!-- 第一张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/1.jpg">
+	          </a>
+	        </div>
+	        <!-- 第二张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/2.jpg">
+	          </a>
+	        </div>
+	        <!-- 第三张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/3.jpg">
+	          </a>
+	        </div>
+	        <!-- 第四张 -->
+	        <div class="mui-slider-item">
+	          <a href="#">
+	            <img src="img/4.jpg">
+	          </a>
+	        </div>
+	        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+	        <div class="mui-slider-item mui-slider-item-duplicate">
+	          <a href="#">
+	            <img src="img/1.jpg">
+	          </a>
+	        </div>
+	      </div>
+	      <div class="mui-slider-indicator">
+	        <div class="mui-indicator mui-active"></div>
+	        <div class="mui-indicator"></div>
+	        <div class="mui-indicator"></div>
+	        <div class="mui-indicator"></div>
+	      </div>
+	    </div>
+	    <ul class="mui-table-view">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" class="mui-navigate-right">
+	                <img class="mui-media-object mui-pull-left" src="img/1.jpg">
+	                <div class="mui-media-body">
+	                  	  幸福
+	                    <p class="mui-ellipsis-2">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" class="mui-navigate-right">
+	                <img class="mui-media-object mui-pull-left" src="img/2.jpg">
+	                <div class="mui-media-body">
+	                    	木屋
+	                    <p class="mui-ellipsis-2">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" class="mui-navigate-right">
+	                <img class="mui-media-object mui-pull-left" src="img/3.jpg">
+	                <div class="mui-media-body">
+	                    CBD
+	                    <p class="mui-ellipsis-2">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" class="mui-navigate-right">
+	                <img class="mui-media-object mui-pull-left" src="img/4.jpg">
+	                <div class="mui-media-body">
+	                   	 	家人
+	                    <p class="mui-ellipsis-2">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+	                </div>
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-person"></span>
+	        <span class="mui-tab-label">通讯录</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-pengyouquan"></span>
+	        <span class="mui-tab-label">朋友圈</span>
+	        <span class="mui-badge mui-badge-success">1</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-gear"></span>
+	        <span class="mui-tab-label">设置</span>
+	    </a>
+	</nav>
+	<script>
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:1000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+</body>
+</html>
