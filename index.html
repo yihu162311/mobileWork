@@ -24,10 +24,24 @@
    		.mui-slider-indicator .mui-indicator.mui-active{
    			background: blue;
    		}
+   		
+   		/*list*/
    		.mui-table-view .mui-media-object{
    			max-width: 80px;
    			height: auto;
    		}
+   		.mui-table-view-cell>a:not(.mui-btn){
+   			display: flex;
+   			display: -webkit-flex;
+   			align-items: center;
+   			-webkit-align-items: center;
+   		}
+   		.mui-table-view .mui-media,
+   		.mui-table-view .mui-media-body {
+		    padding-right: 12px;
+		}
+   		
+   		
    		.mui-bar-tab .mui-tab-item{
    			position: relative;
    		}
@@ -37,12 +51,7 @@
    			right: 10px;
    			transform: scale(.8);
    		}
-   		.mui-table-view-cell>a:not(.mui-btn){
-   			display: flex;
-   			display: -webkit-flex;
-   			align-items: center;
-   			-webkit-align-items: center;
-   		}
+   		
    		
    	</style>
 </head>
@@ -147,9 +156,10 @@
 	        <span class="mui-tab-label">通讯录</span>
 	    </a>
 	    <a class="mui-tab-item">
-	        <span class="mui-icon mui-icon-pengyouquan"></span>
+	        <span class="mui-icon mui-icon-pengyouquan">
+	        	<span class="mui-badge mui-badge-success">1</span>
+	        </span>
 	        <span class="mui-tab-label">朋友圈</span>
-	        <span class="mui-badge mui-badge-success">1</span>
 	    </a>
 	    <a class="mui-tab-item">
 	        <span class="mui-icon mui-icon-gear"></span>
